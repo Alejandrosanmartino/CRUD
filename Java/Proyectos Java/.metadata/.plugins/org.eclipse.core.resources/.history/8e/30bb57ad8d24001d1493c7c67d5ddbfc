@@ -1,0 +1,30 @@
+package empelados;
+
+public class Pruebas {
+
+	public static void main(String[] args) {
+				
+	Empleados trabajador1 = new Empleados("Paco ");
+	Empleados trabajador2 = new Empleados("Antonia ");
+	
+	
+	trabajador1.setCambiaSeccion();
+	System.out.println(trabajador1.getCambiaSeccion());
+				}}
+class Empleados{
+	private final String nombre;
+	private String seccion;
+	
+		public  Empleados(String nom) {
+		
+		nombre=nom;
+			}
+	
+	public void setCambiaSeccion() {
+		
+		seccion=seccion;
+	}
+		
+	public String getCambiaSeccion() {
+		return "El nombre es: "+ nombre+"\n"+"Sección: "+seccion;
+	}		}

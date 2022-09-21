@@ -1,0 +1,27 @@
+import javax.swing.*;
+public class palindrome {
+
+	public static void main(String[] args) {
+
+		//vamos a poner palabras y frases para que el método nos indique si se trata de un palíndrome o no 
+		String[] cadenas = {((JOptionPane.showInputDialog("Introduce Palabra o frase por favor")))};
+		for (String cadena : cadenas) {
+			System.out.println("¿'" + cadena + "' es palíndromo? " + esPalindromo(cadena));
+		}}
+		
+		public static boolean esPalindromo(String cadena) {
+			// Convertir a minúscula y quitar espacios " ", puntos "." y comas ","
+			// También remplazar palabras con acento p.ej. í => i
+
+			cadena = cadena.toLowerCase().replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o")
+					.replace("ú", "u").replace(" ", "").replace(".", "").replace(",", "");
+			// Invertir la cadena, y si es igual que la original entonces
+			// son palíndromos
+			String invertida = new StringBuilder(cadena).reverse().toString();
+			// Para invertir recomiendo ver
+			// https://parzibyte.me/blog/2019/02/20/invertir-cadena-string-java/
+			return invertida.equals(cadena);
+		}
+	}
+	
+

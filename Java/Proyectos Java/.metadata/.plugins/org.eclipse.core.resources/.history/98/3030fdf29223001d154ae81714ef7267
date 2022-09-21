@@ -1,0 +1,46 @@
+
+package empelados;
+import java.util.*;
+public class Uso_Empleado {
+
+	public static void main(String[] args) {
+	
+		Empleado empleado1 = new Empleado("Alex",1300,2022,04,01);
+		System.out.println(empleado1.dameNombre());
+		System.out.println(empleado1.dameSueldo());
+		empleado1.incrementoSueldo(5);
+		
+	}
+
+}
+
+class Empleado{
+	private String nombre;
+	private double sueldo;
+	private Date altaContrato;
+	
+	public Empleado(String nom,double suel, int agno,int mes,int dia) {
+	nombre=nom;
+	sueldo=suel;
+	GregorianCalendar calendario=new GregorianCalendar(agno, mes-1, dia);
+	altaContrato=calendario.getTime();
+	}
+	
+	public String dameNombre() {
+		return nombre;
+	}
+	public double dameSueldo() {
+		return sueldo;
+	}
+	public Date dameFecha() {
+		return altaContrato;
+	}
+	
+	public void incrementoSueldo(double porcentaje) {
+		double aumento =sueldo*porcentaje/100;
+		sueldo+=aumento;
+	}
+	
+	
+	
+}

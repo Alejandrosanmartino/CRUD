@@ -1,0 +1,21 @@
+package pureba;
+
+public class perro {
+	
+	private String raza;
+	private int patas;
+	private boolean ladrar; 
+	
+
+	public void set_raza() {
+		
+		raza="pastor";
+	}
+	
+	
+	public String get_raza() {
+		
+		return "la raza del perro es " +raza;
+	}
+	
+}

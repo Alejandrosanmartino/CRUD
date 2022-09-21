@@ -1,0 +1,18 @@
+package pureba;
+import javax.swing.*;
+
+public class Mi_Perro {
+
+	public static void main(String[] args) {
+
+		perro miperro = new perro();
+		
+		miperro.peso();
+		
+		miperro.peso=Integer.parseInt((JOptionPane.showInputDialog("Introduce peso")));
+	
+		miperro.setPeso();
+	
+	}
+
+}

@@ -1,0 +1,22 @@
+package pureba;
+
+public class perro {
+	
+	private String raza;
+	 int patas;
+	private boolean ladrar;
+	
+	
+	public perro() {
+		
+		raza="pastor";
+		patas=4;
+		
+	}
+
+
+
+
+
+	
+}

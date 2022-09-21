@@ -1,0 +1,20 @@
+import javax.swing.*;
+public class Uso_Coche {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		Coche micoche = new Coche();
+	    micoche.configura_asientos(JOptionPane.showInputDialog("asientos cuero"));
+		micoche.configura_climatizador(JOptionPane.showInputDialog("climatizador));
+		System.out.println(micoche.dime_peso_coche()+ "\n");
+		
+		System.out.println("El precio del coche es: "+ micoche.precio_coche()+"€");
+		
+		
+		
+		
+	}
+
+}

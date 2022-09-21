@@ -1,0 +1,17 @@
+package pureba;
+
+public class Mi_Perro {
+
+	public static void main(String[] args) {
+
+		perro miperro = new perro();
+		
+		miperro.peso();
+		
+		int peso=10;
+		
+		miperro.setPeso();
+	
+	}
+
+}

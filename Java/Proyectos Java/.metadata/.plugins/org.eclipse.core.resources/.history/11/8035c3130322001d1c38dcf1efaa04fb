@@ -1,0 +1,16 @@
+package empelados;
+
+public class Empleado {
+
+	public static void main(String[] args) {
+		
+		private nombre;
+		private int sueldo;
+		private 
+		
+		
+		
+
+	}
+
+}

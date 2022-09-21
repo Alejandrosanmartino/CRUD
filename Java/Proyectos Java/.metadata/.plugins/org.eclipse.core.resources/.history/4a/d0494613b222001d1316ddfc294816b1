@@ -1,0 +1,19 @@
+package pureba;
+
+public class Mi_Perro {
+
+	public static void main(String[] args) {
+
+		perro thor = new perro();
+		
+		thor.setRaza("pastor");
+
+		System.out.println(thor.getRaza());
+		
+		
+		System.out.println(thor.dimepatas());
+		
+		
+	}
+
+}

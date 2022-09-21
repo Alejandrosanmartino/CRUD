@@ -1,0 +1,23 @@
+package pureba;
+
+public class perro {
+	
+private boolean ladrar;
+private int peso;
+private String nombre;
+
+	
+	public void setPeso() {
+		if(this.peso>20) {
+			System.out.println("El perro es grande");
+		}else {
+			System.out.println("El perro es pequeño");
+		}
+	}
+
+	public int getPeso() {
+		return peso;
+	}
+
+	
+}

@@ -1,0 +1,17 @@
+
+public class PrimeraClase {
+
+	public static void main(String[] args) {
+		
+	
+
+ int edad=13;
+ String edad1="jhgj";
+ 
+ System.out.println(edad1);
+
+
+
+
+	}
+}

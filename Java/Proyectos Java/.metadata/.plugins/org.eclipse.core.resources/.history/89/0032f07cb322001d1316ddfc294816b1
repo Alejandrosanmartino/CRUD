@@ -1,0 +1,33 @@
+package pureba;
+
+public class perro {
+	
+	private String raza;
+	private int patas;
+	private boolean ladrar;
+	
+	
+	public perro(String raza, int patas) {
+		
+	}
+	
+	public void  setRaza(String raza) {
+		this.raza=raza;
+	}
+
+  public String getRaza() {
+	  return raza;
+  }
+	
+	
+
+
+
+
+
+
+
+
+
+	
+}

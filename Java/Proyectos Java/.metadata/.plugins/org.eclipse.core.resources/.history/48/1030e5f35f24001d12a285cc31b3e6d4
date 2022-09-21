@@ -1,0 +1,35 @@
+package empelados;
+
+public class Pruebas {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+	}
+
+}
+class Empleados{
+	private String nombre;
+	private String seccion;
+	
+	
+	public  Empleados(String nom) {
+		
+		nombre=nom;
+		seccion="Administración";
+	}
+	
+	public void setCambiaSeccion(String seccion) {
+		
+		this.seccion=seccion;
+	}
+	
+	public String getCambiaSeccion() {
+		return "El nombre es: "+ nombre+"\n"+"Sección:"+seccion;
+	}
+	
+}

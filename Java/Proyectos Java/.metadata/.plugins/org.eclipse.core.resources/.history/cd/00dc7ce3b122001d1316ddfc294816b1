@@ -1,0 +1,25 @@
+package pureba;
+
+public class perro {
+	
+	private String raza;
+	private int patas;
+	private boolean ladrar;
+	
+	
+	public String getRaza() {
+		return raza;
+	}
+	public void setRaza(String raza) {
+		this.raza = raza;
+	} 
+	
+	
+	
+public String dimepatas() {
+	
+	return "El perro tiene 4 patas ";
+}
+
+	
+}

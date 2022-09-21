@@ -1,0 +1,70 @@
+
+package empelados;
+import java.util.*;
+public class Uso_Empleado {
+
+	public static void main(String[] args) {
+	
+	/*Empleado empleado1 = new Empleado("Alex",1300,2022,4,1);
+		Empleado empleado2 = new Empleado("Paco Gómez",11300,1998,6,8);
+	
+		empleado1.incrementoSueldo(5);
+		empleado2.incrementoSueldo(5);
+		
+		System.out.println("Nombre:"+empleado1.dameNombre()+"." +"\n" +"Sueldo: "+empleado1.dameSueldo()+"."+"\n"+"Fecha de contratación: " + empleado1.dameFecha()+".");
+		*/
+		
+		
+		
+		
+		Empleado[] misEmpleados= new Empleado[2];
+		
+		misEmpleados[0]=new Empleado ("Paco Gómez",85000,1990,12,17);
+		misEmpleados[1]=new Empleado ("Antonio Gómez",185000,2022,12,17);
+		
+		
+		for (int i=0;i<misEmpleados.length;i++){
+			misEmpleados[i].incrementoSueldo(5);
+		}
+		
+		for (int i=0; i<misEmpleados.length;i++) {
+			System.out.println("Nombre: " + misEmpleados[i].dameNombre()
+					+ " Sueldo: " + misEmpleados[i].dameSueldo()
+					+ " Fecha de alta: "+ misEmpleados[i].dameFecha());
+		}
+		
+		
+	}
+
+}
+
+class Empleado{
+	private String nombre;
+	private double sueldo;
+	private Date altaContrato;
+	
+	public Empleado(String nom,double suel, int agno,int mes,int dia) {
+	nombre=nom;
+	sueldo=suel;
+	GregorianCalendar calendario=new GregorianCalendar(agno, mes-1, dia);
+	altaContrato=calendario.getTime();
+	}
+	
+	public String dameNombre() {
+		return nombre;
+	}
+	public double dameSueldo() {
+		return sueldo;
+	}
+	public Date dameFecha() {
+		return altaContrato;
+	}
+	
+	public void incrementoSueldo(double porcentaje) {
+		double aumento =sueldo*porcentaje/100;
+		sueldo+=aumento;
+	}
+	
+	
+	
+}
