@@ -4,4 +4,10 @@
 		<item key="DIALOG_X_ORIGIN" value="290"/>
 		<item key="DIALOG_Y_ORIGIN" value="394"/>
 	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="&#x0D;&#x0A;&#x09;public String mostrarVelocidadInicial() {&#x0D;&#x0A;&#x09;return &quot;La velocidad inicial es:&quot;+velocidad;}"/>
+		<list key="findhistory">
+			<item value="&#x0D;&#x0A;&#x09;public String mostrarVelocidadInicial() {&#x0D;&#x0A;&#x09;return &quot;La velocidad inicial es:&quot;+velocidad;}"/>
+		</list>
+	</section>
 </section>

@@ -1,9 +1,0 @@
-
-public class PrimeraClase {
-
-	public static void main(String[] args) {
-	
-		String nombre= "Bucle informático";
-	
-System.out.println(nombre);
-}}

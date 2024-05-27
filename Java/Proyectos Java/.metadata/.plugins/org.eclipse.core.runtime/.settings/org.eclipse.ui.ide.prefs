@@ -1,4 +1,6 @@
+IMPORT_FILES_AND_FOLDERS_RELATIVE=true
+IMPORT_FILES_AND_FOLDERS_TYPE=23,4\:7,1
 eclipse.preferences.version=1
-platformState=1627571903554
+platformState=1627571903619
 quickStart=false
 tipsAndTricks=true
